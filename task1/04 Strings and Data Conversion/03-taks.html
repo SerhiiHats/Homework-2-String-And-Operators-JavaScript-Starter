@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+
+<body>
+    <pre>
+        Завдання:
+        1) запитайте у користувача скільки він хоче купити одиниць товару
+        2) виведіть на екран яку суму повинен внести користувач з урахуванням кількості одиниць, що купуються
+        3) виведіть на екнан скільки одиниць товару залишиться на складі після покупки
+    </pre>
+
+    <script>
+        let productPrice = 101.5; // ціна товару
+        let productQuantity = 50;  // кількість одиниць товару на складі
+        let countProductUser = +prompt(`Скільки ви хочету придбати одиниць товару вартістю ${productPrice} $, введiть значення:`, 0);
+        productQuantity -= countProductUser;
+        alert(`Вам необхідно буде сплатити: ${countProductUser*productPrice} $`);
+        alert(`Залишок товарів на складі: ${productQuantity}`);
+    </script>
+</body>
+
+</html>
+
